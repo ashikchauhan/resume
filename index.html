@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c4534b7464.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main section start -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span class="logo-a">A</span>shik.</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Devloper</p>
+                <h1>Hi, I'm <span>Ashik</span><br>Chauhan From Gujrat</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About us Section Start -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/images/bg.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, iste sunt debitis nam excepturi, voluptas quod optio, praesentium nisi earum rem temporibus laborum odit tempore! Molestiae ab dolore, temporibus iure quisquam perspiciatis a quia exercitationem tempore quos veritatis quis eos ratione nobis. Voluptatibus est soluta debitis aliquam magni adipisci voluptas.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br>Web App Devlopment</li>
+                            <li><span>App Devlopment</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023</span><br>Dtech Technology</li>
+                            <li><span>2021-2022</span><br>IANT</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Diploma in Computer Engineering from Amrut institute - Junagadh</li>
+                            <li><span>2021</span><br>CSP (Certified Software Programer) from IANT</li>
+                            <li><span>2023</span><br>Frontend training from Dtech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -----------------------Services---------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam laboriosam nemo a ratione possimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>    
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam laboriosam nemo a ratione possimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>    
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsam laboriosam nemo a ratione possimus!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+</body>
+</html>
