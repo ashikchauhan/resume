@@ -14,13 +14,15 @@
         <div class="container">
             <nav>
                 <h1 class="logo"><span class="logo-a">A</span>shik.</h1>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About Us</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Frontend Devloper</p>
@@ -116,7 +118,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="./Assets/images/work-2.png">
+                    <img src="/Assets/images/work-2.png">
                     <div class="layer">
                         <h3>Music App</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi praesentium deserunt porro! Atque quisquam dolorum ipsam?</p>
@@ -136,6 +138,37 @@
         </div>
     </div>
 
+    <!-- -------------------------Contact Start------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> ashikchauhan7@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9512521138</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Assets/images/my-cv.pdf" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Ashik Chauhan <i class="fa-solid fa-heart"></i>.</p>
+        </div>
+    </div>
+
 
     <script>
 
@@ -152,6 +185,11 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("")
     </script>
 </body>
 </html>
